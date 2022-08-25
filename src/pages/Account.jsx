@@ -5,6 +5,7 @@ const Account = () => {
   return (
     <>
       <div className='w-full text-white'>
+        
         <img 
         className=' w-full h-[400px] object-cover' 
         src="https://files.merca20.com/uploads/2021/07/bigstock-Television-Streaming-Tv-Broad-409178740.jpg" 

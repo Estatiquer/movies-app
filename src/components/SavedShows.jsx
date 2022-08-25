@@ -4,6 +4,7 @@ import { UserAuth } from '../context/AuthContext';
 import { db } from '../firebase';
 import { updateDoc, doc, onSnapshot } from 'firebase/firestore';
 import {AiOutlineClose} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const SavedShows = () => {
 
@@ -61,9 +62,12 @@ const SavedShows = () => {
                          />
              
                          <div className='absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white'>
+
+                                <Link to={`/movie/${item?.id}`}>
                              <p className='white-pace-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center'>
                                  {item?.title}
                              </p>
+                                </Link>
 
                              <p onClick={() => deleteShow(item.id)}
                              className='absolute text-gray-300 top-4 right-4'

@@ -23,8 +23,6 @@ const Row = ({ title, fetchURL, rowID }) => {
         slider.scrollLeft += 500
     };
 
-    //console.log(movies)
-
     return (
         <>
 
