@@ -21,18 +21,18 @@ const NavBar = () => {
     <div className='flex items-center justify-between p-4 z-[100] w-full absolute'>
 
       <Link to='/'>
-        <h1 className='text-blue-700 text-4xl font-bold cursor-pointer'>ESTATIWATCH</h1>
+        <h1 className='text-blue-700 text-2xl font-bold cursor-pointer md:text-4xl'>ESTATIWATCH</h1>
       </Link>
 
      {
       user?.email ?
     <div>
-      <Link to='/account'><button className='text-white pr-4 '>Account</button></Link>
-      <button onClick={handleLogOut} className='bg-blue-700  px-6 py-2 rounded cursor-pointer text-white'>Log Out</button>
+      <Link to='/account'><button className='text-white pr-4 text-xs md:text-xl'>Account</button></Link>
+      <button onClick={handleLogOut} className='bg-blue-700  px-6 py-2 rounded cursor-pointer text-white text-xs md:text-xl'>Log Out</button>
     </div> :
       <div>
-        <Link to='/login'><button className='text-white pr-4 '>Sign In</button></Link>
-        <Link to='/signup'><button className='bg-blue-700 px-6 py-2 rounded cursor-pointer text-white'>Sign Up</button></Link>
+        <Link to='/login'><button className='text-white pr-4 text-xs md:text-xl'>Sign In</button></Link>
+        <Link to='/signup'><button className='bg-blue-700 px-6 py-2 rounded cursor-pointer text-white text-xs md:text-xl'>Sign Up</button></Link>
       </div>
      }
 

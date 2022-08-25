@@ -1,6 +1,6 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import requests from '../Requests'
+import React, { useEffect, useState } from 'react';
+import requests from '../Requests';
 
 const Main = () => {
 
@@ -34,8 +34,8 @@ const Main = () => {
                         <button className='border text-white border-gray-300 py-2 px-5 ml-4'>Watch Later</button>
                     </div>
 
-                    <p className='text-gray-400 text-sm'>Released: {movie?.release_date}</p>
-                    <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200'>{movie?.overview}</p>
+                    <p className='text-gray-400 text-xs md:text-xl'>Released: {movie?.release_date}</p>
+                    <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200 text-xs md:text-xl'>{movie?.overview}</p>
 
                 </div>
 
@@ -45,4 +45,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Main;
